@@ -86,7 +86,7 @@ public class TV {
 
     public void canalUp(){
         if(getEstado()){
-            if(getCanal() >= 1 || getCanal() <= 120){
+            if(getCanal() >= 1 && getCanal() <= 120){
                 setCanal(getCanal()+1);
             }
         }
@@ -94,7 +94,7 @@ public class TV {
 
     public void canalDown(){
         if(getEstado()){
-            if(getCanal() >= 1 || getCanal() <= 120){
+            if(getCanal() >= 1 && getCanal() <= 120){
                 setCanal(getCanal()-1);
             }
         }
@@ -102,7 +102,7 @@ public class TV {
 
     public void volumenUp(){
         if(getEstado()){
-            if(getVolumen() >= 0 || getVolumen() <= 7){
+            if(getVolumen() >= 0 && getVolumen() < 7){
                 setVolumen(getVolumen()+1);
             }
         }
@@ -110,7 +110,7 @@ public class TV {
 
     public void volumenDown(){
         if(getEstado()){
-            if(getVolumen() >= 0 || getVolumen() <= 7){
+            if(getVolumen() > 0 && getVolumen() <= 7){
                 setVolumen(getVolumen()-1);
             }
         }
