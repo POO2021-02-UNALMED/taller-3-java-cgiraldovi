@@ -18,7 +18,7 @@ public class Main {
         control.canalUp();
 
         TV tv3 =  new TV(marca, false);
-        //tv2.setCanal(121); prueba para verificar
+        tv2.setCanal(121);
 
         boolean ok = false;
 
