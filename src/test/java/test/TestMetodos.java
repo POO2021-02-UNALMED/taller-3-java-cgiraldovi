@@ -35,7 +35,7 @@ public class TestMetodos {
 		control.canalUp();
 		
 		TV tv3 =  new TV(marca, false);
-		tv2.setCanal(121);
+		//tv2.setCanal(121); prueba para verificar
 		
 		boolean ok = false;
 		
